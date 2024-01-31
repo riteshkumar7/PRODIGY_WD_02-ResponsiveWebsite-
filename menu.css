@@ -1,0 +1,457 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F4ECF7;    
+}
+.nav{
+    position:fixed;
+    display: flex;
+    border: 0 solid ;
+    width: 100%;
+    height: 45px;
+    padding: 6px;
+    background-color: #34495E;
+}
+.nav a{
+    color: white;
+    margin-top: 6px;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    background-color: #F4ECF7;
+    border: 1px solid #34495E;
+    border-radius:  10px 10px 0 0;
+    color:cornflowerblue;
+    font-family:Impact,'Arial Narrow Bold', sans-serif;    
+    transition: background-color 0.9s, color 0.9s;
+}
+
+b{
+    margin-left: 80px;
+    margin-right: 240px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 2.8px 0 black;
+    color:antiquewhite;
+}
+
+a{
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#212F3D;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+}
+.menubtn {
+    display: none;
+}
+.navbar{
+    display: none;
+}
+.close{
+    display: none;
+}
+.hidetab{
+    display: none;
+}
+#home{background:#F4ECF7}
+#novel{background:#F4ECF7;}
+#aboutus{background:#F4ECF7;}
+#contactus{background:#F4ECF7}
+
+
+.HOME {
+    border: 2px solid #F4ECF7;
+    margin-top: 20px;
+    height: 490px;
+    display:inline-flex;
+    align-items: center;
+}
+.HOME u{
+    font-size: 28px;
+    color: #1B4F72;
+}
+.HOME span{
+    font-size: 22px;
+}
+.HOME p{
+    margin-top: 220px;
+    font-size: 18px;
+}
+.HOME img{
+    margin-top: 80px;
+    margin-left: 40px;
+    height: 340px;
+}
+#novel{
+    margin-top: 40px;
+}
+.NOVEL{
+    border: 2px solid #F4ECF7;
+    height: 490px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 35px;
+}
+.NOVEL u{
+    font-size: 28px;
+    color: darkolivegreen;
+}
+.NOVEL p{
+    margin-left: 40px;
+}
+.NOVEL img{
+    height: 400px;
+    width: 620px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+#aboutus{
+    margin-top: 40px;
+}
+.ABOUTUS{
+    border: 2px solid #F4ECF7;
+    height: 490px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 35px;
+}
+.ABOUTUS u{
+    font-size: 28px;
+    color: darkolivegreen;
+}
+.ABOUTUS p{
+    margin-right: 60px;
+}
+.ABOUTUS img{
+    height: 350px;
+    width: 480px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#contactus{
+    margin-top: 40px;
+}
+.CONTACT{
+    border: 2px solid #F4ECF7;
+    height: 490px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 35px;
+}
+.CONTACT u{
+    font-size: 28px;
+    color: darkolivegreen;
+}
+.CONTACT p{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.CONTACT img{
+    height: 420px;
+    width: 480px;
+    margin-right: 60px;
+}
+
+/*this for tablet*/
+@media screen and (max-width: 1024px) {
+    body{
+        background-color:#EBF5FB;
+    }
+    .nav {
+        background-color: lightgrey;
+    }
+    
+    .hidetab,.menubtn {
+        display: block;
+    }
+    .navbar{
+        position: fixed;
+        top : 0 ;
+        right: 0;
+        height: 250px;
+        width: 200px;
+        margin-top: 14px;
+        background-color: rgba(255,255,255,0.2);
+        backdrop-filter: blur(15px);
+        box-shadow: -8px 0 6px black;  
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .close{
+        display: block;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .nav a{
+        color:#212F3D;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .nav a:hover{
+        background-color:dimgrey;
+        border: 0;
+        border-radius: 0 0 0 0;
+        width: 100%;
+        color: #9FE2BF;
+        transition: background-color 0.4s, color 0.3s;
+    }
+    
+    b {
+        margin-top: 12px;
+        margin-left: 20px;
+        font-family: 'Times New Roman', Times, serif; 
+        text-shadow: 0 2.5px 0 white;
+        color:#212F3D;
+    }
+    a {
+        display: none;
+        padding-left: 20px; 
+        color: #1B4F72;
+    }
+    .menubtn{
+        margin-left: 350px;
+    }
+    #home{background:#EBF5FB}
+    #novel{background:#EBF5FB}
+    #aboutus{background:#EBF5FB}
+    #contactus{background:#EBF5FB}
+    .HOME {
+        border: 2px solid #EBF5FB;
+        margin-top: 70px;
+        height: 450px;
+        display:inline-flex;
+        align-items: center;
+    }
+    .HOME u{
+        font-size: 22px;
+        color: #1B4F72;
+    }
+    .HOME span{
+        font-size: 18px;
+    }
+    .HOME p{
+        margin-top: 70px;
+        font-size: 16px;
+    }
+    .HOME img{
+        margin-top: 1px;
+        margin-left: 40px;
+        height: 240px;
+    }
+    #novel{
+        margin-top: 30px;
+    }
+    .NOVEL{
+        border: 2px solid #EBF5FB;
+        height: 450px;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .NOVEL u{
+        font-size: 28px;
+        color: darkolivegreen;
+    }
+    .NOVEL p{
+        margin-left: 40px;
+    }
+    .NOVEL img{
+        height: 300px;
+        width: 380px;
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+    #aboutus{
+        margin-top: 30px;
+    }
+    .ABOUTUS{
+        border: 2px solid #EBF5FB;
+        height: 450px;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 85px;
+    }
+    .ABOUTUS u{
+        font-size: 28px;
+        color: darkolivegreen;
+    }
+    .ABOUTUS p{
+        margin-right: 60px;
+    }
+    .ABOUTUS img{
+        height: 300px;
+        width: 380px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    #contactus{
+        margin-top: 30px;
+    }
+    .CONTACT{
+        border: 2px solid #EBF5FB;
+        height: 450px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .CONTACT u{
+        font-size: 28px;
+        color: darkolivegreen;
+    }
+    .CONTACT p{
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+    .CONTACT img{
+        height: 350px;
+        width: 370px;
+        margin-right: 60px;
+    }
+    
+}
+
+/*this for mobile*/
+@media screen and (max-width: 700px) {
+    body{
+        background-color:#AAB7B8;
+    }
+    .nav {
+        background-color:#F7F9F9;
+    }
+    
+    .hidetab,.menubtn {
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .nav a{
+        color:dimgray;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav a:hover{
+        background-color:honeydew;
+        border: 0;
+        border-radius: 0 0 0 0;
+        width: 100%;
+        color:crimson;
+        transition: background-color 0.4s, color 0.3s;        
+    }
+    b {    
+        font-family:Georgia, Times; 
+        text-shadow: 0 2.5px 0 #9FE2BF;
+        color:teal;
+        margin-left: 10px;
+    }
+    a {
+        display: none;
+    }
+    .menubtn{
+        margin-left: 50px;
+        margin-right: 90px;
+    }
+    #home{background:#AAB7B8}
+    #novel{background:#AAB7B8}
+    #aboutus{background:#AAB7B8}
+    #contactus{background:#AAB7B8}
+    .HOME {
+        border: 2px solid #AAB7B8;
+        margin-top: 50px;
+        height: 450px;
+        display:grid;
+    }
+    .HOME u{
+        font-size: 20px;
+        color: #1B4F72;
+    }
+    .HOME span{
+        font-size: 17px;
+    }
+    .HOME p{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .HOME img{
+        margin-top: 100px;
+        margin-left: 140px;
+        height: 170px;
+    }
+    #novel{
+        margin-top: 50px;
+    }
+    .NOVEL{
+        border: 2px solid #AAB7B8;
+        height: 500px;
+        display: grid;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .NOVEL u{
+        font-size: 24px;
+        color: darkolivegreen;
+    }
+    .NOVEL p{
+        margin-top: 90px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .NOVEL img{
+        height: 220px;
+        width: 420px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #aboutus{
+        margin-top: 30px;
+    }
+    .ABOUTUS{
+        border: 2px solid #AAB7B8;
+        height: 450px;
+        display: grid;
+        margin-top: 35px;
+    }
+    .ABOUTUS u{
+        font-size: 24px;
+        color: darkolivegreen;
+    }
+    .ABOUTUS p{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .ABOUTUS img{
+        height: 200px;
+        width: 400px;
+        margin-top: 90px;
+        margin-left: 30px;
+    }
+    #contactus{
+        margin-top: 130px;
+    }
+    .CONTACT{
+        border: 2px solid #AAB7B8;
+        height: 500px;
+        display: grid;
+    }
+    .CONTACT u{
+        font-size: 24px;
+        color: darkolivegreen;
+    }
+    .CONTACT p{
+        margin-left: 20px;
+        margin-right: 18px;
+        margin-top: 45px;
+    }
+    .CONTACT img{
+        height: 250px;
+        width: 300px;
+        margin-left: 70px;
+    }
+}
